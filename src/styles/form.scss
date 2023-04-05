@@ -1,0 +1,148 @@
+.register{
+  background: #663333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.login{
+  background: #663333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+
+
+.form{
+  background: #FAEBD7;
+  padding: 20px 40px;
+  border-radius: 15px;
+  text-align: center;
+
+  &__title{
+    color: #663333;
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+  &__box{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+
+    &-label{
+      position: relative;
+      width: 500px;
+      height: 30px;
+      border-bottom: 2px solid #663333;
+    }
+
+    &-field{
+      border-radius: 10px;
+      height: 100%;
+      color: #663333;
+      width: 100%;
+      background: transparent;
+      padding: 10px;
+      font-weight: 600;
+      font-size: 20px;
+      border: none;
+
+      &::placeholder{
+        color: #663333;
+        font-weight: 400;
+        opacity: .7;
+        font-size: 17px;
+      }
+    }
+
+    &-error{
+      color: red;
+      margin: 5px;
+    }
+
+    &-gender{
+      display: flex;
+      column-gap: 20px;
+      align-items: center;
+      padding-bottom: 5px;
+
+
+      &-title{
+        padding-left: 10px;
+        color: #663333;
+        font-weight: 400;
+        opacity: .7;
+        font-size: 17px;
+        margin-right: 100px;
+        pointer-events: none;
+      }
+
+      &-radio{
+        display: flex;
+        column-gap: 10px;
+        align-items: center;
+        color: #663333;
+        font-weight: 700;
+        font-size: 20px;
+        cursor: pointer;
+      }
+    }
+
+    &-eye{
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 10px ;
+    }
+  }
+
+  &__agree{
+    margin-top: 20px;
+
+    &-age{
+      display: flex;
+      column-gap: 10px;
+      align-items: center;
+    }
+
+    &-desc{
+      font-size: 16px;
+      font-weight: 700;
+      color: #663333;
+    }
+  }
+
+  &__btn{
+    padding: 10px 30px;
+    background: #663333;
+    color: white;
+    border-radius: 10px;
+    margin: 30px 0;
+
+    &:hover{
+      transform: scale(1.07);
+    }
+  }
+
+  &__bottom{
+    margin-top: -15px;
+
+    &-link{
+      color: #663333;
+      font-weight: 600;
+
+      &:hover{
+        text-decoration: 2px underline #663333;
+        text-underline-offset: 5px;
+      }
+    }
+  }
+
+}

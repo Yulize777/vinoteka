@@ -1,0 +1,71 @@
+.card{
+  padding: 50px 0;
+
+  &__content{
+    display: flex;
+    column-gap: 50px;
+  }
+
+  &__left{
+    border-radius: 10px;
+    width: calc(50% - 25px);
+    background: url("https://i0.wp.com/vinotekashop.com/wp-content/uploads/2019/03/dostavka.png?fit=596%2C390&ssl=1") center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    padding: 60px;
+
+    &:hover{
+      transform: scale(1.05);
+      cursor: pointer;
+    }
+
+    &:hover .card__left-link{
+      color: white;
+    }
+
+    &:hover .card__left-icon{
+      transform: translateX(5px);
+      color: white;
+      fill: white;
+    }
+
+    &-title{
+      font-size:65px;
+      font-weight: 700;
+    }
+
+    &-desc{
+      color: #111111;
+      font-size: 20px;
+      margin-top: 20px;
+    }
+
+    &-link{
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+      color: #663333;
+    }
+  }
+
+  &__right{
+    background: url("https://i0.wp.com/vinotekashop.com/wp-content/uploads/2019/03/degustacia.png?fit=596%2C390&ssl=1") center/cover no-repeat;
+    align-items: flex-start;
+    text-align: left;
+
+    &:hover .card__right-link{
+      color: black;
+    }
+
+    &:hover .card__right-icon{
+      fill: black;
+    }
+
+    &-title{
+      color: #663333;
+    }
+  }
+}

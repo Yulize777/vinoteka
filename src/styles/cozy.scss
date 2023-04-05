@@ -1,0 +1,61 @@
+.cozy{
+  background: black;
+  padding: 150px 0;
+  background: url("https://i0.wp.com/vinotekashop.com/wp-content/uploads/2019/04/bc2eng.png?fit=1280%2C664&ssl=1")center/cover no-repeat;
+  position: relative;
+
+  &::after{
+    content: 'Simply. Cozy. Vinoteka';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,40%);
+    font-size: 70px;
+    width: 100%;
+    font-weight: 900;
+    text-align: center;
+    color: #663333;
+
+  }
+
+
+  &__content{
+    display: flex;
+    justify-content: center;
+    column-gap: 550px;
+  }
+
+  &__left{
+    width: calc(33% - 20px);
+    text-align: right;
+
+    &-title{
+      color: #db3f44;
+      font-size: 30px;
+      font-weight: 700;
+      margin-bottom: 30px;
+    }
+
+    &-desc{
+      font-size: 18px;
+      color: #999999;
+      line-height: 20px;
+      font-weight: 400;
+      margin-bottom: 50%;
+    }
+
+    &-link{
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+      color: #784b4b;
+      font-size: 18px;
+
+      &:hover .cozy__left-link-icon{
+        transform: translateX(10px) scale(1.4);
+      }
+
+    }
+  }
+
+}

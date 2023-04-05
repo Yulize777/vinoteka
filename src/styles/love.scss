@@ -1,0 +1,57 @@
+.love{
+  padding: 50px 0;
+
+  &__title{
+    font-size: 55px;
+    font-weight: 700;
+  }
+
+  &__content{
+    background: url("https://i0.wp.com/vinotekashop.com/wp-content/uploads/2019/04/bc3edt-2.png?fit=1280%2C693&ssl=1")center/cover no-repeat;
+    padding: 300px 0 150px;
+    row-gap: 50px;
+    display: flex;
+    flex-direction: column;
+
+
+    &-left{
+      display: flex;
+      column-gap:280px;
+      align-items: center;
+
+      &-item{
+        display: flex;
+        align-items: center;
+        column-gap: 40px;
+        width: 100%;
+
+      }
+
+      &-img{
+        width: 70px;
+        height: 70px;
+      }
+
+      &-info{
+        display: flex;
+        flex-direction: column;
+        row-gap:10px;
+        text-align: right;
+      }
+
+      &-title{
+        font-weight: 700;
+        font-size: 18px;
+        color: black;
+      }
+
+      &-desc{
+        font-weight: 500;
+        font-size: 15px;
+        color: #333333;
+      }
+    }
+
+
+  }
+}

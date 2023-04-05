@@ -1,0 +1,68 @@
+.popular{
+  padding: 50px 0;
+
+  &__title{
+    font-size: 50px;
+    color: black;
+    font-weight: 800;
+  }
+
+  &__subtitle{
+    font-size: 30px;
+    color: #252125;
+  }
+
+  &__content{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+
+    &-box{
+      width: calc(33% - 10px);
+      cursor: pointer;
+
+      &-img{
+        width: 100%;
+        background: white;
+
+        &:hover{
+          transform: scale(1.07);
+        }
+
+      }
+    }
+
+    &-left{
+      width: calc(75% - 10px);
+      display: flex;
+      column-gap: 10px;
+    }
+
+    &-right{
+      width: calc(25% - 10px);
+      background: black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 60px 0;
+      transform: translateY(25px);
+      border-radius: 10px;
+      cursor: pointer;
+
+      &:hover{
+        transform: scale(1.07) translateY(25px);
+
+      }
+
+      &-title{
+        font-size: 40px;
+        font-weight: 800;
+      }
+
+      &-subtitle{
+        font-size: 20px;
+      }
+    }
+  }
+}

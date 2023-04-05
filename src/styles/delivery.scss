@@ -1,0 +1,43 @@
+.delivery{
+
+  &__title{
+    padding: 150px 0 80px;
+    text-align: center;
+    font-size: 70px;
+    font-weight: 900;
+    color: white;
+    background: url("https://vinotekashop.com/wp-content/uploads/2019/03/heroimage-dostavka.png")center/cover no-repeat;
+  }
+
+  &__info{
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+
+    &-text{
+      color: #444444;
+      font-size: 17px;
+    }
+
+    &-box{
+      padding: 50px 0;
+      justify-content: space-around;
+      display: flex;
+      align-items: start;
+
+      &-card{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        row-gap: 20px;
+      }
+
+      &-subtitle{
+        text-align: center;
+        font-size: 17px;
+        color: black;
+      }
+    }
+  }
+}

@@ -1,0 +1,131 @@
+.header{
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  background: white;
+  filter: drop-shadow(5px 5px 3px grey);
+
+
+
+  &__nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__right{
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+
+    &-list{
+      display: flex;
+      column-gap: 20px;
+      align-items: center;
+    }
+
+    &-search{
+      cursor: pointer;
+
+      &-out{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        cursor: pointer;
+        color: #663333;
+        position: relative;
+      }
+    }
+
+    &-item{
+      font-weight: 600;
+      font-size: 18px;
+      color: #663333;
+      cursor: pointer;
+      padding: 10px 0 20px;
+
+      &:hover{
+        text-decoration: underline #663333;
+        text-underline-offset: 5px;
+
+      }
+
+      &:hover .header__right-item-pop{
+        display: flex;
+      }
+
+      &-pop{
+        box-shadow: 2px 2px 5px 1px grey;        background: white;
+        padding: 20px;
+        display: none;
+        flex-direction: column;
+        width: 280px;
+        border-radius: 10px;
+        transform: translate(-10%, 20px);
+        position: absolute;
+      }
+
+      &-li{
+        color: #663333;
+        text-decoration: none;
+        padding: 5px 10px;
+        border-radius: 10px;
+
+        &-icon{
+          background-color: white;
+          width: 35px;
+          height: 35px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        &-ava{
+          padding: 5px;
+          color: #663333;
+          display: flex;
+          align-items: center;
+          column-gap: 10px;
+          border-radius: 10px;
+          position: relative;
+
+
+          //&:hover .header__right-item-li-icon{
+          //  fill: white;
+          //}
+
+          &-right{
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            color: #663333;
+            background: white;
+          }
+
+          &:hover{
+            background: #663333;
+            color: white;
+          }
+
+          &:hover{
+            background: #663333;
+            color: white;
+          }
+        }
+
+        &:hover{
+          background: #663333;
+          color: white;
+        }
+      }
+    }
+  }
+}
